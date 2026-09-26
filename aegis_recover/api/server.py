@@ -1,8 +1,7 @@
 import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse
+from fastapi.responses import HTMLResponse, Response
 
 from .routes import router
 
@@ -28,44 +27,37 @@ def create_app() -> FastAPI:
     base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     static_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "static")
 
-    @app.get("/")
-    async def serve_index():
+    def read_file_content(filename: str) -> str:
         candidates = [
-            os.path.join(base_dir, "index.html"),
-            os.path.join(static_dir, "index.html"),
-            os.path.join(base_dir, "frontend", "index.html"),
+            os.path.join(base_dir, filename),
+            os.path.join(static_dir, filename),
+            os.path.join(base_dir, "frontend", filename),
         ]
         for path in candidates:
             if os.path.exists(path):
-                return FileResponse(path)
-        return {"message": "AegisRecover AI Backend Running."}
+                try:
+                    with open(path, "r", encoding="utf-8") as f:
+                        return f.read()
+                except Exception:
+                    pass
+        return ""
+
+    @app.get("/", response_class=HTMLResponse)
+    async def serve_index():
+        html = read_file_content("index.html")
+        if html:
+            return HTMLResponse(content=html)
+        return HTMLResponse(content="<h1>AegisRecover AI Platform</h1><p>Server running cleanly.</p>")
 
     @app.get("/app.js")
     async def serve_js():
-        candidates = [
-            os.path.join(base_dir, "app.js"),
-            os.path.join(static_dir, "app.js"),
-            os.path.join(base_dir, "frontend", "app.js"),
-        ]
-        for path in candidates:
-            if os.path.exists(path):
-                return FileResponse(path)
-        return {"error": "app.js not found"}
+        js = read_file_content("app.js")
+        return Response(content=js, media_type="application/javascript")
 
     @app.get("/style.css")
     async def serve_css():
-        candidates = [
-            os.path.join(base_dir, "style.css"),
-            os.path.join(static_dir, "style.css"),
-            os.path.join(base_dir, "frontend", "style.css"),
-        ]
-        for path in candidates:
-            if os.path.exists(path):
-                return FileResponse(path)
-        return {"error": "style.css not found"}
-
-    if os.path.exists(static_dir):
-        app.mount("/static", StaticFiles(directory=static_dir), name="static")
+        css = read_file_content("style.css")
+        return Response(content=css, media_type="text/css")
 
     return app
 
