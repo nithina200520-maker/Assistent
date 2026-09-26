@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.dd
+*.raw
+*.img
+*.bin
+recovered_files/
+recovered_storage/
+.env
+gemini_config.json
+.vscode/
+.idea/

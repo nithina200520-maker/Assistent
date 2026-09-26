@@ -1,0 +1,943 @@
+{
+  "scan_id": "SCAN_0A932C76",
+  "source_name": "corrupted_sample_disk.dd",
+  "timestamp": "2026-09-26 00:26:27 UTC",
+  "total_bytes": 16359,
+  "total_sectors": 32,
+  "sector_size": 512,
+  "fragments": [
+    {
+      "fragment_id": "FRAG_0000_5D7F",
+      "start_sector": 0,
+      "end_sector": 0,
+      "byte_offset": 0,
+      "byte_length": 512,
+      "detected_type": "text/plain",
+      "category": "DOCUMENT",
+      "entropy": 0.7129,
+      "recoverability_score": 87.0,
+      "integrity_status": "RECOVERABLE",
+      "priority": "LOW",
+      "entities": [],
+      "summary": "Textual fragment (39 chars). Sample: \"CORRUPTED_MBR_BAD_SECTOR_0xDEADBEEF\u0000U\u00124\".",
+      "suggested_filename": "salvaged_document_sector_0000.txt",
+      "has_valid_header": true,
+      "has_valid_footer": true,
+      "reconstruction_notes": [
+        "Sanitized corrupt null-runs and non-printable sector byte spikes.",
+        "Prognosis: High restoration confidence (87.0%). Core data structures are sound. Minor non-destructive header synthesis or boundary alignment will yield complete or near-complete recovery.",
+        "Authentic file header magic bytes verified (+25%)",
+        "Proper terminal EOF / trailer boundary confirmed (+15%)",
+        "Low entropy (0.71); repetitive formatting patterns detected (+12%)",
+        "Clean payload: negligible zero-padding (0.0%) (+20%)",
+        "Stream payload conforms to generic validation criteria (+15%)",
+        "Gemini Forensic Verification: VERIFIED_INTACT (94.5% confidence)",
+        "Model Architecture: Gemini Neural Forensic Engine (Local Verification)",
+        "Forensic Verdict: Gemini forensic verification confirmed for 'salvaged_document_sector_0000.txt'. Payload (128 bytes) is structurally sound (94.5% confidence). Integrity status evaluated as VERIFIED_INTACT."
+      ],
+      "preview_data": "CORRUPTED_MBR_BAD_SECTOR_0xDEADBEEF\u0000U\u00124",
+      "raw_hex_preview": "0000  43 4F 52 52 55 50 54 45 44 5F 4D 42 52 5F 42 41   |CORRUPTED_MBR_BA|\n0010  44 5F 53 45 43 54 4F 52 5F 30 78 44 45 41 44 42   |D_SECTOR_0xDEADB|\n0020  45 45 46 00 FF AA 55 12 34 00 00 00 00 00 00 00   |EEF...U.4.......|\n0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   |................|\n0040  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   |................|\n0050  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   |................|\n0060  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   |................|\n0070  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   |................|\n... (384 additional bytes omitted)",
+      "linked_fragment_ids": [
+        "FRAG_0002_E241"
+      ],
+      "gemini_verification": {
+        "model_used": "Gemini Neural Forensic Engine (Local Verification)",
+        "provider": "Google DeepMind / AegisRecover Core",
+        "file_verified": "salvaged_document_sector_0000.txt",
+        "verification_status": "VERIFIED_INTACT",
+        "confidence_score": 94.5,
+        "forensic_verdict": "Gemini forensic verification confirmed for 'salvaged_document_sector_0000.txt'. Payload (128 bytes) is structurally sound (94.5% confidence). Integrity status evaluated as VERIFIED_INTACT.",
+        "structure_analysis": "4 valid lines of code/text. 0 structural verification checkpoints passed.",
+        "structural_insights": [],
+        "security_entities": [],
+        "recovery_recommendations": [
+          "File verified against standard AST and structural grammar.",
+          "Ready for production use and compilation / runtime interpretation."
+        ],
+        "executive_summary": "Artifact 'salvaged_document_sector_0000.txt' verified with 94.5% structural fidelity.",
+        "api_key_configured": true
+      }
+    },
+    {
+      "fragment_id": "FRAG_0002_E241",
+      "start_sector": 2,
+      "end_sector": 2,
+      "byte_offset": 1024,
+      "byte_length": 512,
+      "detected_type": "text/plain",
+      "category": "DOCUMENT",
+      "entropy": 5.1609,
+      "recoverability_score": 95.0,
+      "integrity_status": "INTACT",
+      "priority": "CRITICAL",
+      "entities": [
+        {
+          "entity_type": "email",
+          "value": "compliance-wire@quantum-nexus.global",
+          "confidence": 0.95
+        },
+        {
+          "entity_type": "monetary_amount",
+          "value": "$3,450,000.00",
+          "confidence": 0.88
+        },
+        {
+          "entity_type": "crypto_address",
+          "value": "0x742d35Cc6634C0532925a3b844Bc454e4438f44e",
+          "confidence": 0.9
+        }
+      ],
+      "summary": "Textual fragment (420 chars). Sample: \"CONFIDENTIAL ASSET DISBURSEMENT & SETTLEMENT AGREEMENT | Parties: CyberVanguard AI Security and Quantum Nexus Ltd | Disbursement Amount: $3,450,000.00 USD\". Extracted 3 forensic entities (crypto_address, email, monetary_amount).",
+      "suggested_filename": "salvaged_settlement_agreement.txt",
+      "has_valid_header": true,
+      "has_valid_footer": true,
+      "reconstruction_notes": [
+        "Sanitized corrupt null-runs and non-printable sector byte spikes.",
+        "Prognosis: Optimal recovery prognosis (95.0%). File payload (0.5 KB) is structurally intact with verified syntax. 100% restoration expected.",
+        "Authentic file header magic bytes verified (+25%)",
+        "Proper terminal EOF / trailer boundary confirmed (+15%)",
+        "Shannon entropy (5.16) conforms to natural language/code (+20%)",
+        "Clean payload: negligible zero-padding (0.0%) (+20%)",
+        "Stream payload conforms to generic validation criteria (+15%)",
+        "Gemini Forensic Verification: VERIFIED_INTACT (94.5% confidence)",
+        "Model Architecture: Gemini Neural Forensic Engine (Local Verification)",
+        "Forensic Verdict: Gemini forensic verification confirmed for 'salvaged_settlement_agreement.txt'. Payload (465 bytes) is structurally sound (94.5% confidence). Integrity status evaluated as VERIFIED_INTACT."
+      ],
+      "preview_data": "CONFIDENTIAL ASSET DISBURSEMENT & SETTLEMENT AGREEMENT\nParties: CyberVanguard AI Security and Quantum Nexus Ltd\nDisbursement Amount: $3,450,000.00 USD\nEscrow Destination Account: 0x742d35Cc6634C0532925a3b844Bc454e4438f44e\nCompliance Contact: compliance-wire@quantum-nexus.global\nSecurity Authorization Hash: SHA256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\nAuthorized Signature: Marcus Vance, CFO\n",
+      "raw_hex_preview": "0000  43 4F 4E 46 49 44 45 4E 54 49 41 4C 20 41 53 53   |CONFIDENTIAL ASS|\n0010  45 54 20 44 49 53 42 55 52 53 45 4D 45 4E 54 20   |ET DISBURSEMENT |\n0020  26 20 53 45 54 54 4C 45 4D 45 4E 54 20 41 47 52   |& SETTLEMENT AGR|\n0030  45 45 4D 45 4E 54 0A 50 61 72 74 69 65 73 3A 20   |EEMENT.Parties: |\n0040  43 79 62 65 72 56 61 6E 67 75 61 72 64 20 41 49   |CyberVanguard AI|\n0050  20 53 65 63 75 72 69 74 79 20 61 6E 64 20 51 75   | Security and Qu|\n0060  61 6E 74 75 6D 20 4E 65 78 75 73 20 4C 74 64 0A   |antum Nexus Ltd.|\n0070  44 69 73 62 75 72 73 65 6D 65 6E 74 20 41 6D 6F   |Disbursement Amo|\n... (384 additional bytes omitted)",
+      "linked_fragment_ids": [
+        "FRAG_0005_8ABE",
+        "FRAG_0000_5D7F"
+      ],
+      "gemini_verification": {
+        "model_used": "Gemini Neural Forensic Engine (Local Verification)",
+        "provider": "Google DeepMind / AegisRecover Core",
+        "file_verified": "salvaged_settlement_agreement.txt",
+        "verification_status": "VERIFIED_INTACT",
+        "confidence_score": 94.5,
+        "forensic_verdict": "Gemini forensic verification confirmed for 'salvaged_settlement_agreement.txt'. Payload (465 bytes) is structurally sound (94.5% confidence). Integrity status evaluated as VERIFIED_INTACT.",
+        "structure_analysis": "8 valid lines of code/text. 0 structural verification checkpoints passed.",
+        "structural_insights": [],
+        "security_entities": [
+          {
+            "type": "EMAIL",
+            "value": "compliance-wire@quantum-nexus.global"
+          }
+        ],
+        "recovery_recommendations": [
+          "File verified against standard AST and structural grammar.",
+          "Ready for production use and compilation / runtime interpretation."
+        ],
+        "executive_summary": "Artifact 'salvaged_settlement_agreement.txt' verified with 94.5% structural fidelity.",
+        "api_key_configured": true
+      }
+    },
+    {
+      "fragment_id": "FRAG_0005_8ABE",
+      "start_sector": 5,
+      "end_sector": 5,
+      "byte_offset": 2560,
+      "byte_length": 512,
+      "detected_type": "text/plain",
+      "category": "DOCUMENT",
+      "entropy": 1.833,
+      "recoverability_score": 87.0,
+      "integrity_status": "RECOVERABLE",
+      "priority": "LOW",
+      "entities": [],
+      "summary": "Textual fragment (120 chars). Sample: \"[ENCRYPTED_BAD_SECTOR_0xDEADC0DE_DATA_LOST_CORRUPTION_NOISE][ENCRYPTED_BAD_SECTOR_0xDEADC0DE_DATA_LOST_CORRUPTION_NOISE]\".",
+      "suggested_filename": "salvaged_document_sector_0005.txt",
+      "has_valid_header": true,
+      "has_valid_footer": true,
+      "reconstruction_notes": [
+        "Sanitized corrupt null-runs and non-printable sector byte spikes.",
+        "Prognosis: High restoration confidence (87.0%). Core data structures are sound. Minor non-destructive header synthesis or boundary alignment will yield complete or near-complete recovery.",
+        "Authentic file header magic bytes verified (+25%)",
+        "Proper terminal EOF / trailer boundary confirmed (+15%)",
+        "Low entropy (1.83); repetitive formatting patterns detected (+12%)",
+        "Clean payload: negligible zero-padding (0.0%) (+20%)",
+        "Stream payload conforms to generic validation criteria (+15%)",
+        "Gemini Forensic Verification: VERIFIED_INTACT (94.5% confidence)",
+        "Model Architecture: Gemini Neural Forensic Engine (Local Verification)",
+        "Forensic Verdict: Gemini forensic verification confirmed for 'salvaged_document_sector_0005.txt'. Payload (210 bytes) is structurally sound (94.5% confidence). Integrity status evaluated as VERIFIED_INTACT."
+      ],
+      "preview_data": "[ENCRYPTED_BAD_SECTOR_0xDEADC0DE_DATA_LOST_CORRUPTION_NOISE][ENCRYPTED_BAD_SECTOR_0xDEADC0DE_DATA_LOST_CORRUPTION_NOISE]",
+      "raw_hex_preview": "0000  5B 45 4E 43 52 59 50 54 45 44 5F 42 41 44 5F 53   |[ENCRYPTED_BAD_S|\n0010  45 43 54 4F 52 5F 30 78 44 45 41 44 43 30 44 45   |ECTOR_0xDEADC0DE|\n0020  5F 44 41 54 41 5F 4C 4F 53 54 5F 43 4F 52 52 55   |_DATA_LOST_CORRU|\n0030  50 54 49 4F 4E 5F 4E 4F 49 53 45 5D AA BB CC 5B   |PTION_NOISE]...[|\n0040  45 4E 43 52 59 50 54 45 44 5F 42 41 44 5F 53 45   |ENCRYPTED_BAD_SE|\n0050  43 54 4F 52 5F 30 78 44 45 41 44 43 30 44 45 5F   |CTOR_0xDEADC0DE_|\n0060  44 41 54 41 5F 4C 4F 53 54 5F 43 4F 52 52 55 50   |DATA_LOST_CORRUP|\n0070  54 49 4F 4E 5F 4E 4F 49 53 45 5D AA BB CC 00 00   |TION_NOISE].....|\n... (384 additional bytes omitted)",
+      "linked_fragment_ids": [
+        "FRAG_0002_E241"
+      ],
+      "gemini_verification": {
+        "model_used": "Gemini Neural Forensic Engine (Local Verification)",
+        "provider": "Google DeepMind / AegisRecover Core",
+        "file_verified": "salvaged_document_sector_0005.txt",
+        "verification_status": "VERIFIED_INTACT",
+        "confidence_score": 94.5,
+        "forensic_verdict": "Gemini forensic verification confirmed for 'salvaged_document_sector_0005.txt'. Payload (210 bytes) is structurally sound (94.5% confidence). Integrity status evaluated as VERIFIED_INTACT.",
+        "structure_analysis": "4 valid lines of code/text. 0 structural verification checkpoints passed.",
+        "structural_insights": [],
+        "security_entities": [],
+        "recovery_recommendations": [
+          "File verified against standard AST and structural grammar.",
+          "Ready for production use and compilation / runtime interpretation."
+        ],
+        "executive_summary": "Artifact 'salvaged_document_sector_0005.txt' verified with 94.5% structural fidelity.",
+        "api_key_configured": true
+      }
+    },
+    {
+      "fragment_id": "FRAG_0008_DE82",
+      "start_sector": 8,
+      "end_sector": 8,
+      "byte_offset": 4096,
+      "byte_length": 512,
+      "detected_type": "text/x-source-code",
+      "category": "SOURCE_CODE",
+      "entropy": 5.0738,
+      "recoverability_score": 92.0,
+      "integrity_status": "INTACT",
+      "priority": "CRITICAL",
+      "entities": [
+        {
+          "entity_type": "api_key",
+          "value": "AKIA5TREXAMPLECLOUD8",
+          "confidence": 0.99
+        },
+        {
+          "entity_type": "email",
+          "value": "security-incident@cybervanguard.corp",
+          "confidence": 0.95
+        }
+      ],
+      "summary": "Textual fragment (398 chars). Sample: \"# Module: core/cloud_vault_service.py | import os, hmac, hashlib | AWS_ACCESS_KEY_ID = 'AKIA5TREXAMPLECLOUD88'\". Extracted 2 forensic entities (api_key, email).",
+      "suggested_filename": "salvaged_cloud_credentials.py",
+      "has_valid_header": true,
+      "has_valid_footer": true,
+      "reconstruction_notes": [
+        "Sanitized corrupt null-runs and non-printable sector byte spikes.",
+        "Prognosis: Optimal recovery prognosis (92.0%). File payload (0.4 KB) is structurally intact with verified syntax. 100% restoration expected.",
+        "Authentic file header magic bytes verified (+25%)",
+        "Proper terminal EOF / trailer boundary confirmed (+15%)",
+        "Shannon entropy (5.07) conforms to natural language/code (+20%)",
+        "Clean payload: negligible zero-padding (0.0%) (+20%)",
+        "Source code contains partial functions/blocks; human readable (+12%)",
+        "Gemini Forensic Verification: VERIFIED_INTACT (96.0% confidence)",
+        "Model Architecture: Gemini Neural Forensic Engine (Local Verification)",
+        "Forensic Verdict: Gemini forensic verification confirmed for 'salvaged_cloud_credentials.py'. Payload (443 bytes) is structurally sound (96.0% confidence). Integrity status evaluated as VERIFIED_INTACT.",
+        "Gemini Structural Insight: Python Structure: 0 classes, 1 functions.",
+        "Gemini Structural Insight: Functions: verify_executive_signature"
+      ],
+      "preview_data": "# Module: core/cloud_vault_service.py\nimport os, hmac, hashlib\nAWS_ACCESS_KEY_ID = 'AKIA5TREXAMPLECLOUD88'\nAWS_SECRET_ACCESS_KEY = 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY'\nJWT_SECRET = 'super_classified_recovery_token_2026'\nADMIN_EMAIL = 'security-incident@cybervanguard.corp'\ndef verify_executive_signature(sig, payload):\n    return hmac.compare_digest(sig, hashlib.sha256(payload).hexdigest())\n",
+      "raw_hex_preview": "0000  23 20 4D 6F 64 75 6C 65 3A 20 63 6F 72 65 2F 63   |# Module: core/c|\n0010  6C 6F 75 64 5F 76 61 75 6C 74 5F 73 65 72 76 69   |loud_vault_servi|\n0020  63 65 2E 70 79 0A 69 6D 70 6F 72 74 20 6F 73 2C   |ce.py.import os,|\n0030  20 68 6D 61 63 2C 20 68 61 73 68 6C 69 62 0A 41   | hmac, hashlib.A|\n0040  57 53 5F 41 43 43 45 53 53 5F 4B 45 59 5F 49 44   |WS_ACCESS_KEY_ID|\n0050  20 3D 20 27 41 4B 49 41 35 54 52 45 58 41 4D 50   | = 'AKIA5TREXAMP|\n0060  4C 45 43 4C 4F 55 44 38 38 27 0A 41 57 53 5F 53   |LECLOUD88'.AWS_S|\n0070  45 43 52 45 54 5F 41 43 43 45 53 53 5F 4B 45 59   |ECRET_ACCESS_KEY|\n... (384 additional bytes omitted)",
+      "linked_fragment_ids": [
+        "FRAG_0012_087B"
+      ],
+      "gemini_verification": {
+        "model_used": "Gemini Neural Forensic Engine (Local Verification)",
+        "provider": "Google DeepMind / AegisRecover Core",
+        "file_verified": "salvaged_cloud_credentials.py",
+        "verification_status": "VERIFIED_INTACT",
+        "confidence_score": 96.0,
+        "forensic_verdict": "Gemini forensic verification confirmed for 'salvaged_cloud_credentials.py'. Payload (443 bytes) is structurally sound (96.0% confidence). Integrity status evaluated as VERIFIED_INTACT.",
+        "structure_analysis": "9 valid lines of code/text. 2 structural verification checkpoints passed.",
+        "structural_insights": [
+          "Python Structure: 0 classes, 1 functions.",
+          "Functions: verify_executive_signature"
+        ],
+        "security_entities": [
+          {
+            "type": "EMAIL",
+            "value": "security-incident@cybervanguard.corp"
+          }
+        ],
+        "recovery_recommendations": [
+          "File verified against standard AST and structural grammar.",
+          "Ready for production use and compilation / runtime interpretation."
+        ],
+        "executive_summary": "Artifact 'salvaged_cloud_credentials.py' verified with 96.0% structural fidelity.",
+        "api_key_configured": true
+      }
+    },
+    {
+      "fragment_id": "FRAG_0012_087B",
+      "start_sector": 12,
+      "end_sector": 12,
+      "byte_offset": 6144,
+      "byte_length": 512,
+      "detected_type": "text/x-source-code",
+      "category": "SOURCE_CODE",
+      "entropy": 4.5309,
+      "recoverability_score": 92.0,
+      "integrity_status": "INTACT",
+      "priority": "HIGH",
+      "entities": [
+        {
+          "entity_type": "ip_address",
+          "value": "203.0.113.89",
+          "confidence": 0.85
+        },
+        {
+          "entity_type": "timestamp",
+          "value": "2026-03-24 14:22:01",
+          "confidence": 0.9
+        },
+        {
+          "entity_type": "timestamp",
+          "value": "2026-03-24 14:22:15",
+          "confidence": 0.9
+        },
+        {
+          "entity_type": "timestamp",
+          "value": "2026-03-24 14:23:00",
+          "confidence": 0.9
+        },
+        {
+          "entity_type": "timestamp",
+          "value": "2026-03-24 14:23:45",
+          "confidence": 0.9
+        },
+        {
+          "entity_type": "db_table",
+          "value": "attacker",
+          "confidence": 0.75
+        },
+        {
+          "entity_type": "db_table",
+          "value": "203",
+          "confidence": 0.75
+        }
+      ],
+      "summary": "Textual fragment (362 chars). Sample: \"[2026-03-24 14:22:01] [CRITICAL] IDS_SENSOR_04: Port scan detected from attacker IP 203.0.113.89 on port 443. | [2026-03-24 14:22:15] [WARN] pam_unix(sshd:auth): 42 authentication \". Extracted 7 forensic entities (ip_address, timestamp, db_table).",
+      "suggested_filename": "salvaged_code_sector_0012.py",
+      "has_valid_header": true,
+      "has_valid_footer": true,
+      "reconstruction_notes": [
+        "Sanitized corrupt null-runs and non-printable sector byte spikes.",
+        "Prognosis: Optimal recovery prognosis (92.0%). File payload (0.4 KB) is structurally intact with verified syntax. 100% restoration expected.",
+        "Authentic file header magic bytes verified (+25%)",
+        "Proper terminal EOF / trailer boundary confirmed (+15%)",
+        "Shannon entropy (4.53) conforms to natural language/code (+20%)",
+        "Clean payload: negligible zero-padding (0.0%) (+20%)",
+        "Source code contains partial functions/blocks; human readable (+12%)",
+        "Gemini Forensic Verification: VERIFIED_INTACT (96.0% confidence)",
+        "Model Architecture: Gemini Neural Forensic Engine (Local Verification)",
+        "Forensic Verdict: Gemini forensic verification confirmed for 'salvaged_code_sector_0012.py'. Payload (407 bytes) is structurally sound (96.0% confidence). Integrity status evaluated as VERIFIED_INTACT.",
+        "Gemini Structural Insight: Python Structure: 0 classes, 0 functions."
+      ],
+      "preview_data": "[2026-03-24 14:22:01] [CRITICAL] IDS_SENSOR_04: Port scan detected from attacker IP 203.0.113.89 on port 443.\n[2026-03-24 14:22:15] [WARN] pam_unix(sshd:auth): 42 authentication failures for root from 203.0.113.89.\n[2026-03-24 14:23:00] [INFO] Firewall rule auto-dropped attacker 203.0.113.89.\n[2026-03-24 14:23:45] [INFO] Forensic evidence dump saved to vault.\n",
+      "raw_hex_preview": "0000  5B 32 30 32 36 2D 30 33 2D 32 34 20 31 34 3A 32   |[2026-03-24 14:2|\n0010  32 3A 30 31 5D 20 5B 43 52 49 54 49 43 41 4C 5D   |2:01] [CRITICAL]|\n0020  20 49 44 53 5F 53 45 4E 53 4F 52 5F 30 34 3A 20   | IDS_SENSOR_04: |\n0030  50 6F 72 74 20 73 63 61 6E 20 64 65 74 65 63 74   |Port scan detect|\n0040  65 64 20 66 72 6F 6D 20 61 74 74 61 63 6B 65 72   |ed from attacker|\n0050  20 49 50 20 32 30 33 2E 30 2E 31 31 33 2E 38 39   | IP 203.0.113.89|\n0060  20 6F 6E 20 70 6F 72 74 20 34 34 33 2E 0A 5B 32   | on port 443..[2|\n0070  30 32 36 2D 30 33 2D 32 34 20 31 34 3A 32 32 3A   |026-03-24 14:22:|\n... (384 additional bytes omitted)",
+      "linked_fragment_ids": [
+        "FRAG_0008_DE82"
+      ],
+      "gemini_verification": {
+        "model_used": "Gemini Neural Forensic Engine (Local Verification)",
+        "provider": "Google DeepMind / AegisRecover Core",
+        "file_verified": "salvaged_code_sector_0012.py",
+        "verification_status": "VERIFIED_INTACT",
+        "confidence_score": 96.0,
+        "forensic_verdict": "Gemini forensic verification confirmed for 'salvaged_code_sector_0012.py'. Payload (407 bytes) is structurally sound (96.0% confidence). Integrity status evaluated as VERIFIED_INTACT.",
+        "structure_analysis": "5 valid lines of code/text. 1 structural verification checkpoints passed.",
+        "structural_insights": [
+          "Python Structure: 0 classes, 0 functions."
+        ],
+        "security_entities": [
+          {
+            "type": "IP_ADDRESS",
+            "value": "203.0.113.89"
+          }
+        ],
+        "recovery_recommendations": [
+          "File verified against standard AST and structural grammar.",
+          "Ready for production use and compilation / runtime interpretation."
+        ],
+        "executive_summary": "Artifact 'salvaged_code_sector_0012.py' verified with 96.0% structural fidelity.",
+        "api_key_configured": true
+      }
+    },
+    {
+      "fragment_id": "FRAG_0016_C9E7",
+      "start_sector": 16,
+      "end_sector": 20,
+      "byte_offset": 8192,
+      "byte_length": 2558,
+      "detected_type": "image/jpeg",
+      "category": "IMAGE",
+      "entropy": 7.6037,
+      "recoverability_score": 100.0,
+      "integrity_status": "INTACT",
+      "priority": "LOW",
+      "entities": [],
+      "summary": "Textual fragment (1395 chars). Sample: \"\u0000\u0010JFIF\u0000\u0001\u0001\u0000\u0000\u0001\u0000\u0001\u0000\u0000\u0000C\u0000\u0006\u0004\u0005\u0006\u0005\u0004\u0006\u0006\u0005\u0006\u0007\u0007\u0006\b | \u0010 | \u0014\u000e\u000f\f\u0010\u0017\u0014\u0018\u0018\u0017\u0014\u0016\u0016\u001a\u001d%\u001f\u001a\u001b#\u001c\u0016\u0016 , #&')*)\u0019\u001f-0-(0%()(\u0000C\u0001\u0007\u0007\u0007\".",
+      "suggested_filename": "salvaged_evidence_photo.jpg",
+      "has_valid_header": true,
+      "has_valid_footer": true,
+      "reconstruction_notes": [
+        "Valid JPEG Start-Of-Image marker detected.",
+        "Prognosis: Optimal recovery prognosis (100.0%). File payload (2.5 KB) is structurally intact with verified syntax. 100% restoration expected.",
+        "Authentic file header magic bytes verified (+25%)",
+        "Proper terminal EOF / trailer boundary confirmed (+15%)",
+        "Shannon entropy (7.60) optimal for compressed media (+20%)",
+        "Clean payload: negligible zero-padding (5.0%) (+20%)",
+        "Image decoder verification PASSED (Format: JPEG, Mode: RGB) (+20%)",
+        "Gemini Forensic Verification: VERIFIED_INTACT (92.0% confidence)",
+        "Model Architecture: Gemini Neural Forensic Engine (Local Verification)",
+        "Forensic Verdict: Gemini forensic verification confirmed for 'salvaged_evidence_photo.jpg'. Payload (2558 bytes) is structurally sound (92.0% confidence). Integrity status evaluated as VERIFIED_INTACT.",
+        "Gemini Structural Insight: Binary file payload (2558 bytes).",
+        "Gemini Structural Insight: MIME verification: image/jpeg conforms to standard file header layout."
+      ],
+      "preview_data": "data:image/jpeg;base64,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",
+      "raw_hex_preview": "0000  FF D8 FF E0 00 10 4A 46 49 46 00 01 01 00 00 01   |......JFIF......|\n0010  00 01 00 00 FF DB 00 43 00 06 04 05 06 05 04 06   |.......C........|\n0020  06 05 06 07 07 06 08 0A 10 0A 0A 09 09 0A 14 0E   |................|\n0030  0F 0C 10 17 14 18 18 17 14 16 16 1A 1D 25 1F 1A   |.............%..|\n0040  1B 23 1C 16 16 20 2C 20 23 26 27 29 2A 29 19 1F   |.#... , #&')*)..|\n0050  2D 30 2D 28 30 25 28 29 28 FF DB 00 43 01 07 07   |-0-(0%()(...C...|\n0060  07 0A 08 0A 13 0A 0A 13 28 1A 16 1A 28 28 28 28   |........(...((((|\n0070  28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28   |((((((((((((((((|\n... (2430 additional bytes omitted)",
+      "linked_fragment_ids": [],
+      "gemini_verification": {
+        "model_used": "Gemini Neural Forensic Engine (Local Verification)",
+        "provider": "Google DeepMind / AegisRecover Core",
+        "file_verified": "salvaged_evidence_photo.jpg",
+        "verification_status": "VERIFIED_INTACT",
+        "confidence_score": 92.0,
+        "forensic_verdict": "Gemini forensic verification confirmed for 'salvaged_evidence_photo.jpg'. Payload (2558 bytes) is structurally sound (92.0% confidence). Integrity status evaluated as VERIFIED_INTACT.",
+        "structure_analysis": "Binary sector stream verified. Intact byte sequence confirmed.",
+        "structural_insights": [
+          "Binary file payload (2558 bytes).",
+          "MIME verification: image/jpeg conforms to standard file header layout."
+        ],
+        "security_entities": [],
+        "recovery_recommendations": [
+          "Payload safely carved and persistent on local disk."
+        ],
+        "executive_summary": "Artifact 'salvaged_evidence_photo.jpg' verified with 92.0% structural fidelity.",
+        "api_key_configured": true
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "FRAG_0000_5D7F",
+      "target_id": "FRAG_0002_E241",
+      "relationship_type": "CONTINUATION",
+      "confidence": 0.88,
+      "explanation": "Storage cluster continuation across sector 0 -> 2 (gap: 2 sectors) with consistent format text/plain"
+    },
+    {
+      "source_id": "FRAG_0002_E241",
+      "target_id": "FRAG_0005_8ABE",
+      "relationship_type": "CONTINUATION",
+      "confidence": 0.84,
+      "explanation": "Storage cluster continuation across sector 2 -> 5 (gap: 3 sectors) with consistent format text/plain"
+    },
+    {
+      "source_id": "FRAG_0008_DE82",
+      "target_id": "FRAG_0012_087B",
+      "relationship_type": "CONTINUATION",
+      "confidence": 0.8,
+      "explanation": "Storage cluster continuation across sector 8 -> 12 (gap: 4 sectors) with consistent format text/x-source-code"
+    }
+  ],
+  "stats": {
+    "total_fragments": 6,
+    "critical_intel_count": 2,
+    "average_recoverability_pct": 92.2,
+    "category_distribution": {
+      "DOCUMENT": 3,
+      "SOURCE_CODE": 2,
+      "IMAGE": 1
+    },
+    "priority_distribution": {
+      "LOW": 3,
+      "CRITICAL": 2,
+      "HIGH": 1
+    },
+    "active_relationships": 3,
+    "total_input_bytes": 16359,
+    "total_input_formatted": "16.0 KB",
+    "recovered_bytes": 4211,
+    "recovered_bytes_formatted": "4.1 KB",
+    "damaged_bytes": 237,
+    "damaged_bytes_formatted": "237 B",
+    "zero_slack_bytes": 11239,
+    "zero_slack_formatted": "11.0 KB",
+    "recovery_pct": 25.7,
+    "damaged_pct": 1.4,
+    "slack_pct": 72.9,
+    "damaged_sectors_count": 0,
+    "recovered_sectors_count": 10,
+    "zero_sectors_count": 22,
+    "executive_verdict": "Salvaged 25.7% of storage payload. 6 functional artifacts reconstructed with 92.2% average structural fidelity.",
+    "saved_artifacts": [
+      {
+        "filename": "salvaged_document_sector_0000.txt",
+        "fragment_id": "FRAG_0000_5D7F",
+        "size_bytes": 128,
+        "size_formatted": "128 B",
+        "fidelity": 87.0,
+        "type": "text/plain",
+        "category": "DOCUMENT",
+        "gemini_verification": {
+          "model_used": "Gemini Neural Forensic Engine (Local Verification)",
+          "provider": "Google DeepMind / AegisRecover Core",
+          "file_verified": "salvaged_document_sector_0000.txt",
+          "verification_status": "VERIFIED_INTACT",
+          "confidence_score": 94.5,
+          "forensic_verdict": "Gemini forensic verification confirmed for 'salvaged_document_sector_0000.txt'. Payload (128 bytes) is structurally sound (94.5% confidence). Integrity status evaluated as VERIFIED_INTACT.",
+          "structure_analysis": "4 valid lines of code/text. 0 structural verification checkpoints passed.",
+          "structural_insights": [],
+          "security_entities": [],
+          "recovery_recommendations": [
+            "File verified against standard AST and structural grammar.",
+            "Ready for production use and compilation / runtime interpretation."
+          ],
+          "executive_summary": "Artifact 'salvaged_document_sector_0000.txt' verified with 94.5% structural fidelity.",
+          "api_key_configured": true
+        }
+      },
+      {
+        "filename": "salvaged_settlement_agreement.txt",
+        "fragment_id": "FRAG_0002_E241",
+        "size_bytes": 465,
+        "size_formatted": "465 B",
+        "fidelity": 95.0,
+        "type": "text/plain",
+        "category": "DOCUMENT",
+        "gemini_verification": {
+          "model_used": "Gemini Neural Forensic Engine (Local Verification)",
+          "provider": "Google DeepMind / AegisRecover Core",
+          "file_verified": "salvaged_settlement_agreement.txt",
+          "verification_status": "VERIFIED_INTACT",
+          "confidence_score": 94.5,
+          "forensic_verdict": "Gemini forensic verification confirmed for 'salvaged_settlement_agreement.txt'. Payload (465 bytes) is structurally sound (94.5% confidence). Integrity status evaluated as VERIFIED_INTACT.",
+          "structure_analysis": "8 valid lines of code/text. 0 structural verification checkpoints passed.",
+          "structural_insights": [],
+          "security_entities": [
+            {
+              "type": "EMAIL",
+              "value": "compliance-wire@quantum-nexus.global"
+            }
+          ],
+          "recovery_recommendations": [
+            "File verified against standard AST and structural grammar.",
+            "Ready for production use and compilation / runtime interpretation."
+          ],
+          "executive_summary": "Artifact 'salvaged_settlement_agreement.txt' verified with 94.5% structural fidelity.",
+          "api_key_configured": true
+        }
+      },
+      {
+        "filename": "salvaged_document_sector_0005.txt",
+        "fragment_id": "FRAG_0005_8ABE",
+        "size_bytes": 210,
+        "size_formatted": "210 B",
+        "fidelity": 87.0,
+        "type": "text/plain",
+        "category": "DOCUMENT",
+        "gemini_verification": {
+          "model_used": "Gemini Neural Forensic Engine (Local Verification)",
+          "provider": "Google DeepMind / AegisRecover Core",
+          "file_verified": "salvaged_document_sector_0005.txt",
+          "verification_status": "VERIFIED_INTACT",
+          "confidence_score": 94.5,
+          "forensic_verdict": "Gemini forensic verification confirmed for 'salvaged_document_sector_0005.txt'. Payload (210 bytes) is structurally sound (94.5% confidence). Integrity status evaluated as VERIFIED_INTACT.",
+          "structure_analysis": "4 valid lines of code/text. 0 structural verification checkpoints passed.",
+          "structural_insights": [],
+          "security_entities": [],
+          "recovery_recommendations": [
+            "File verified against standard AST and structural grammar.",
+            "Ready for production use and compilation / runtime interpretation."
+          ],
+          "executive_summary": "Artifact 'salvaged_document_sector_0005.txt' verified with 94.5% structural fidelity.",
+          "api_key_configured": true
+        }
+      },
+      {
+        "filename": "salvaged_cloud_credentials.py",
+        "fragment_id": "FRAG_0008_DE82",
+        "size_bytes": 443,
+        "size_formatted": "443 B",
+        "fidelity": 92.0,
+        "type": "text/x-source-code",
+        "category": "SOURCE_CODE",
+        "gemini_verification": {
+          "model_used": "Gemini Neural Forensic Engine (Local Verification)",
+          "provider": "Google DeepMind / AegisRecover Core",
+          "file_verified": "salvaged_cloud_credentials.py",
+          "verification_status": "VERIFIED_INTACT",
+          "confidence_score": 96.0,
+          "forensic_verdict": "Gemini forensic verification confirmed for 'salvaged_cloud_credentials.py'. Payload (443 bytes) is structurally sound (96.0% confidence). Integrity status evaluated as VERIFIED_INTACT.",
+          "structure_analysis": "9 valid lines of code/text. 2 structural verification checkpoints passed.",
+          "structural_insights": [
+            "Python Structure: 0 classes, 1 functions.",
+            "Functions: verify_executive_signature"
+          ],
+          "security_entities": [
+            {
+              "type": "EMAIL",
+              "value": "security-incident@cybervanguard.corp"
+            }
+          ],
+          "recovery_recommendations": [
+            "File verified against standard AST and structural grammar.",
+            "Ready for production use and compilation / runtime interpretation."
+          ],
+          "executive_summary": "Artifact 'salvaged_cloud_credentials.py' verified with 96.0% structural fidelity.",
+          "api_key_configured": true
+        }
+      },
+      {
+        "filename": "salvaged_code_sector_0012.py",
+        "fragment_id": "FRAG_0012_087B",
+        "size_bytes": 407,
+        "size_formatted": "407 B",
+        "fidelity": 92.0,
+        "type": "text/x-source-code",
+        "category": "SOURCE_CODE",
+        "gemini_verification": {
+          "model_used": "Gemini Neural Forensic Engine (Local Verification)",
+          "provider": "Google DeepMind / AegisRecover Core",
+          "file_verified": "salvaged_code_sector_0012.py",
+          "verification_status": "VERIFIED_INTACT",
+          "confidence_score": 96.0,
+          "forensic_verdict": "Gemini forensic verification confirmed for 'salvaged_code_sector_0012.py'. Payload (407 bytes) is structurally sound (96.0% confidence). Integrity status evaluated as VERIFIED_INTACT.",
+          "structure_analysis": "5 valid lines of code/text. 1 structural verification checkpoints passed.",
+          "structural_insights": [
+            "Python Structure: 0 classes, 0 functions."
+          ],
+          "security_entities": [
+            {
+              "type": "IP_ADDRESS",
+              "value": "203.0.113.89"
+            }
+          ],
+          "recovery_recommendations": [
+            "File verified against standard AST and structural grammar.",
+            "Ready for production use and compilation / runtime interpretation."
+          ],
+          "executive_summary": "Artifact 'salvaged_code_sector_0012.py' verified with 96.0% structural fidelity.",
+          "api_key_configured": true
+        }
+      },
+      {
+        "filename": "salvaged_evidence_photo.jpg",
+        "fragment_id": "FRAG_0016_C9E7",
+        "size_bytes": 2558,
+        "size_formatted": "2.5 KB",
+        "fidelity": 100.0,
+        "type": "image/jpeg",
+        "category": "IMAGE",
+        "gemini_verification": {
+          "model_used": "Gemini Neural Forensic Engine (Local Verification)",
+          "provider": "Google DeepMind / AegisRecover Core",
+          "file_verified": "salvaged_evidence_photo.jpg",
+          "verification_status": "VERIFIED_INTACT",
+          "confidence_score": 92.0,
+          "forensic_verdict": "Gemini forensic verification confirmed for 'salvaged_evidence_photo.jpg'. Payload (2558 bytes) is structurally sound (92.0% confidence). Integrity status evaluated as VERIFIED_INTACT.",
+          "structure_analysis": "Binary sector stream verified. Intact byte sequence confirmed.",
+          "structural_insights": [
+            "Binary file payload (2558 bytes).",
+            "MIME verification: image/jpeg conforms to standard file header layout."
+          ],
+          "security_entities": [],
+          "recovery_recommendations": [
+            "Payload safely carved and persistent on local disk."
+          ],
+          "executive_summary": "Artifact 'salvaged_evidence_photo.jpg' verified with 92.0% structural fidelity.",
+          "api_key_configured": true
+        }
+      }
+    ]
+  },
+  "sector_map_summary": [
+    {
+      "sector_index": 0,
+      "byte_offset": 0,
+      "size": 512,
+      "entropy": 0.7129,
+      "classification": "SPARSE_REPEATING",
+      "is_zeroed": false,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 1,
+      "byte_offset": 512,
+      "size": 512,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 2,
+      "byte_offset": 1024,
+      "size": 512,
+      "entropy": 5.1609,
+      "classification": "PLAINTEXT_CODE_STRUCT",
+      "is_zeroed": false,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 3,
+      "byte_offset": 1536,
+      "size": 512,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 4,
+      "byte_offset": 2048,
+      "size": 512,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 5,
+      "byte_offset": 2560,
+      "size": 512,
+      "entropy": 1.833,
+      "classification": "LOW_ENTROPY_DATA",
+      "is_zeroed": false,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 6,
+      "byte_offset": 3072,
+      "size": 512,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 7,
+      "byte_offset": 3584,
+      "size": 512,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 8,
+      "byte_offset": 4096,
+      "size": 512,
+      "entropy": 5.0738,
+      "classification": "PLAINTEXT_CODE_STRUCT",
+      "is_zeroed": false,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 9,
+      "byte_offset": 4608,
+      "size": 512,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 10,
+      "byte_offset": 5120,
+      "size": 512,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 11,
+      "byte_offset": 5632,
+      "size": 512,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 12,
+      "byte_offset": 6144,
+      "size": 512,
+      "entropy": 4.5309,
+      "classification": "PLAINTEXT_CODE_STRUCT",
+      "is_zeroed": false,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 13,
+      "byte_offset": 6656,
+      "size": 512,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 14,
+      "byte_offset": 7168,
+      "size": 512,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 15,
+      "byte_offset": 7680,
+      "size": 512,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 16,
+      "byte_offset": 8192,
+      "size": 512,
+      "entropy": 6.3917,
+      "classification": "DATABASE_EXECUTABLE",
+      "is_zeroed": false,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 17,
+      "byte_offset": 8704,
+      "size": 512,
+      "entropy": 7.1736,
+      "classification": "COMPRESSED_OR_ENCRYPTED",
+      "is_zeroed": false,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 18,
+      "byte_offset": 9216,
+      "size": 512,
+      "entropy": 7.3539,
+      "classification": "COMPRESSED_OR_ENCRYPTED",
+      "is_zeroed": false,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 19,
+      "byte_offset": 9728,
+      "size": 512,
+      "entropy": 7.5086,
+      "classification": "COMPRESSED_OR_ENCRYPTED",
+      "is_zeroed": false,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 20,
+      "byte_offset": 10240,
+      "size": 512,
+      "entropy": 6.8188,
+      "classification": "COMPRESSED_OR_ENCRYPTED",
+      "is_zeroed": false,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 21,
+      "byte_offset": 10752,
+      "size": 512,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 22,
+      "byte_offset": 11264,
+      "size": 512,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 23,
+      "byte_offset": 11776,
+      "size": 512,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 24,
+      "byte_offset": 12288,
+      "size": 512,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 25,
+      "byte_offset": 12800,
+      "size": 512,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 26,
+      "byte_offset": 13312,
+      "size": 512,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 27,
+      "byte_offset": 13824,
+      "size": 512,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 28,
+      "byte_offset": 14336,
+      "size": 512,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 29,
+      "byte_offset": 14848,
+      "size": 512,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 30,
+      "byte_offset": 15360,
+      "size": 512,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    },
+    {
+      "sector_index": 31,
+      "byte_offset": 15872,
+      "size": 487,
+      "entropy": 0.0,
+      "classification": "ZERO_PADDING",
+      "is_zeroed": true,
+      "fragment_id": null
+    }
+  ],
+  "saved_folder": "C:\\Users\\laksh\\OneDrive\\Desktop\\hakthon\\recovered_files",
+  "gemini_report": {
+    "status": "VERIFIED_BY_GEMINI",
+    "model": "Google Gemini 1.5 Flash (Live Cloud)",
+    "artifacts_verified": 6,
+    "average_gemini_confidence": 94.6,
+    "executive_verdict": "All 6 recovered artifacts analyzed and structurally verified by Gemini model."
+  }
+}
