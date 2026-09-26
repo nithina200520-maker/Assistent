@@ -43,6 +43,8 @@ def create_app() -> FastAPI:
         return ""
 
     @app.get("/", response_class=HTMLResponse)
+    @app.get("/api/index", response_class=HTMLResponse)
+    @app.get("/api/index.py", response_class=HTMLResponse)
     async def serve_index():
         html = read_file_content("index.html")
         if html:
@@ -50,11 +52,13 @@ def create_app() -> FastAPI:
         return HTMLResponse(content="<h1>AegisRecover AI Platform</h1><p>Server running cleanly.</p>")
 
     @app.get("/app.js")
+    @app.get("/api/app.js")
     async def serve_js():
         js = read_file_content("app.js")
         return Response(content=js, media_type="application/javascript")
 
     @app.get("/style.css")
+    @app.get("/api/style.css")
     async def serve_css():
         css = read_file_content("style.css")
         return Response(content=css, media_type="text/css")
